@@ -1,0 +1,177 @@
+%------------------------
+% Resume Template
+% Author : Anubhav Singh
+% Github : https://github.com/xprilion
+% License : MIT
+%------------------------
+
+\documentclass[a4paper,20pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[pdftex]{hyperref}
+\usepackage{fancyhdr}
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.530in}
+\addtolength{\evensidemargin}{-0.375in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.45in}
+\addtolength{\textheight}{1in}
+
+\urlstyle{rm}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-10pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-6pt}]
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[2]{
+  \item\small{
+    \textbf{#1}{: #2 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeItemWithoutTitle}[1]{
+  \item\small{
+    {\vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{#3} & \textit{#4} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+
+\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-3pt}}
+
+\renewcommand{\labelitemii}{$\circ$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-----------------------------
+%%%%%%  CV STARTS HERE  %%%%%%
+
+\begin{document}
+
+%----------HEADING-----------------
+\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+  \textbf{{\LARGE Yukang Lian}} & Email: \href{mailto:}{Yukang.Lian2022@gmail.com}\\
+  \href{https://yukang-lian.github.io/}{Personal Website: Yukang-LIAN.github.io} & Mobile:~~~+86-156-5181-5189 \\
+  \href{https://github.com/Yukang-LIAN}{Github: ~~github.com/Yukang-LIAN} \\
+\end{tabular*}
+
+%-----------EDUCATION-----------------
+\section{~~Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Harbin Institute of Technology, Shenzhen}{Shenzhen, China}
+      {Master of Engineering - Control Science and Engineering}{Sep 2021 - Dec 2023}
+      {\scriptsize \textit{ \footnotesize{\newline{}\textbf{Courses:} Advanced Algorithm Design, Artificial Intelligence, Machine Learning}}}
+    \resumeSubHeadingListEnd
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Nanjing University of Science and Technology}{Nanjing, China}
+      {Bachelor Degree - Automation}{Sep 2017 - July 2021}
+      {\scriptsize \textit{ \footnotesize{\newline{}\textbf{Courses:} Data Structures, Computer Network, Control Theory}}}
+    \resumeSubHeadingListEnd
+    
+	    
+\vspace{-5pt}
+\section{Skills Summary}
+	\resumeSubHeadingListStart
+	\resumeSubItem{Languages}{~~~~~~JAVA, C++, Python, Rust(Currently learning)}
+	\resumeSubItem{Tools}{~~~~~~~~~~~~~~Docker, GIT, MySQL, SQLite}
+	\resumeSubItem{Platforms}{~~~~~~~Linux, Windows, Arduino, Raspberry, Alibaba Cloud}
+	\resumeSubItem{English Skill}{~~~CET4 570 points, CET6 515 points}
+	\resumeSubItem{Soft Skills}{~~~~~~~Leadership, Event Management, Writing, Public Speaking, Time Management}
+
+\resumeSubHeadingListEnd
+\vspace{-5pt}
+\section{Opensource Experience}
+  \resumeSubHeadingListStart
+    \resumeSubheading{OSPP - Add Tracing Mechanism for Doris (Apache Doris Community)}{Remote}
+    {Student Developer (Part-time)}{July 2022 - Sep 2022}
+    \resumeItemListStart
+        \resumeItem{Scheme Reserach}
+          {Investigate the integration solutions of APM systems such as OpenTelemetry and SkyWalking, and produce storage, display, and alarm solutions for tracing data.}
+          \resumeItem{Add OpenTelemetry to Doris}
+          {Add the OpenTelemetry project in Doris to support query or import job tracking.}
+          \resumeItem{Further Research}
+          {Tracing indicators should be further refined to support node-level and operator-level Tracing indicator statistics.}
+      \resumeItemListEnd
+\vspace{-5pt}
+
+\resumeSubHeadingListEnd
+
+%-----------PROJECTS-----------------
+\vspace{-5pt}
+\section{Projects}
+\resumeSubHeadingListStart
+\resumeSubItem{Gitlet - A version-control system}
+{Gitlet is a version-control system that mimics some of the basic features of the popular system Git in JAVA language. (Jun 2022)}
+\vspace{2pt}
+\resumeSubItem{Bear Maps - A web mapping application}
+{Bear Maps display a map of the city of Berkeley which support scrolling, zooming, and route finding (similar to Google Maps). (May 2022)}
+\vspace{2pt}
+\resumeSubHeadingListEnd
+\vspace{-5pt}
+\section{Publications}
+\resumeSubHeadingListStart
+\resumeSubItem{Paper: Influence of different data processing methods on error prediction of three-axis NC machine tool based on LSTM Neural Network (Chinese Control Conference)}
+{This paper establishes the tracking error prediction model of single axis servo system based on LSTM neural network with different data process methods and tests the effectiveness of each method. (Apr 2022)}
+\vspace{2pt}
+\resumeSubItem{Patent: A data-driven five-axis contour control method}
+{The invention proposes a contour error prediction and compensation method based on a neural network, which improves the machining accuracy of a five-axis numerical control machine tool for any trajectory in the machining process. (Mar 2022)}
+\resumeSubHeadingListEnd
+\vspace{-5pt}
+%-----------Awards-----------------
+\section{Honors and Awards}
+\begin{description}[font=$\bullet$]
+\item {First Prize Scholarship of Harbin Institute of Technology - Sep, 2021}
+\vspace{-5pt}
+\item {Third Prize Scholarship of Nanjing University of Science and Technology - Sep, 2020}
+\vspace{-5pt}
+\item {Second Prize of Nanjing University of Science and Technology Robot Competition - September, 2018}
+
+\end{description}
+
+\vspace{-5pt}
+\section{Volunteer Experience}
+  \resumeSubHeadingListStart
+	\resumeSubheading
+    {Served as a TA for Corporate Internship Courses}{Shenzhen, China}
+    {Assist sophomore students to better participate in internships and cultivate engineering ideas.}{Jun 2022}
+\vspace{5pt}
+    % \vspace{10pt}\textbf{\large{Community Experience}}
+    \resumeSubheading
+    {Anti-epidemic volunteers}{Shenzhen, China}
+    {During the epidemic, deliver meals to quarantined classmates to help them study and live better.}{Mar 2022}
+
+\resumeSubHeadingListEnd
+
+\end{document}
